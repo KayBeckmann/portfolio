@@ -14,20 +14,24 @@ body {
 }
 
 button {
-  background-color: #00bee8;
   box-shadow: 4px 4px 4px 0px #00000040;
+  width: Hug (107px);
+  height: Hug (58px);
+  padding: 15px 30px 15px 30px;
+  border-radius: 10px;
+  gap: 10px;
   color: white;
   font-size: 1.5rem;
-  border-radius: 10px;
-  left: 93px;
-  padding: 20px;
   border: 1px;
 
   &:hover {
     background-color: #4b47ff;
-    left: 93px;
-    border: 1px;
+    padding: 20px 40px 20px 40px;
   }
+}
+
+.primary {
+  background-color: #00bee8;
 }
 
 .pointer {

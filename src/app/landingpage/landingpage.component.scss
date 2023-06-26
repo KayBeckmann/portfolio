@@ -38,9 +38,29 @@
 }
 
 .left {
-  left: -200px;
+  left: -250px;
 }
 
 .right {
-  right: -350px;
+  right: -400px;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left {
+  margin-left: 50px;
+}
+
+.footer-right {
+  margin-right: -15px;
+  margin-bottom: 45px;
+  transform: rotate(90deg);
 }
