@@ -2,8 +2,15 @@
   height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .senkrecht {
     transform: rotate(-90deg);
@@ -24,6 +31,7 @@
 }
 
 .background {
+  z-index: -4;
   position: absolute;
   height: 90%;
   top: 15%;
