@@ -26,3 +26,20 @@ img {
   width: 70%;
   object-fit: fill;
 }
+
+.information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+
+  img {
+    height: 40px;
+    width: auto;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
