@@ -1,10 +1,42 @@
 nav {
-  background-color: purple;
+  z-index: 999;
+  background-color: #141d2f;
   width: 100vw;
-  height: 50px;
+  height: 109px;
   position: fixed;
   top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  h1 {
+    font-size: 35px;
+  }
+}
+
+.left {
+  padding-left: 37px;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  padding-right: 37px;
+
+  a {
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    margin-right: 29px;
+
+    &:hover {
+      color: #1cdae6;
+    }
+  }
+
+  .aktive {
+    border-bottom: 3px solid #9747ff;
+  }
 }
