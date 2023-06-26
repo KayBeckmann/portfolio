@@ -1,8 +1,38 @@
 .wrapper {
-  background-color: lightgreen;
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .senkrecht {
+    transform: rotate(-90deg);
+    font-size: 3rem;
+  }
+}
+
+.headline {
+  h1 {
+    font-size: 8rem;
+    margin: 0;
+  }
+  h2 {
+    color: #4b47ff;
+    font-size: 4rem;
+    margin: 0;
+  }
+}
+
+.background {
+  position: absolute;
+  height: 90%;
+  top: 15%;
+}
+
+.left {
+  left: -200px;
+}
+
+.right {
+  right: -350px;
 }
