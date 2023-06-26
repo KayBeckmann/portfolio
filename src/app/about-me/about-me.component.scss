@@ -6,7 +6,7 @@
 }
 
 .left {
-  width: 47%;
+  width: 49%;
   padding: 35px;
 }
 
@@ -16,7 +16,7 @@ h1 {
 
 .right {
   background-image: url("./../../assets/img/shadow_3.png");
-  width: 47%;
+  width: 49%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,6 +34,7 @@ img {
   gap: 15px;
 
   img {
+    z-index: 10;
     height: 40px;
     width: auto;
     transition: all 0.2s ease-in-out;
@@ -41,5 +42,19 @@ img {
     &:hover {
       transform: scale(1.5);
     }
+  }
+}
+
+footer {
+  position: relative;
+  width: 100vw;
+  height: 70px;
+  bottom: 0;
+
+  img {
+    z-index: 1;
+    width: 100%;
+    object-fit: fill;
+    margin-top: -350px;
   }
 }
