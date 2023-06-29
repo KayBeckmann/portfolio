@@ -3,10 +3,14 @@
 
   <div class="wrapper">
     <div class="left">
-      <h1>ICONS</h1>
+      <app-icons *ngFor="let skill of skills" [skill]="skill"></app-icons>
     </div>
     <div class="right">
       <h1>SKILLS</h1>
+      <p>
+        I have gained experience in building projects with various front end
+        technologies and concepts.
+      </p>
     </div>
   </div>
 </div>

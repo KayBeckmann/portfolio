@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-icons',
-  templateUrl: './icons.component.html',
-  styleUrls: ['./icons.component.scss']
+  selector: "app-icons",
+  templateUrl: "./icons.component.html",
+  styleUrls: ["./icons.component.scss"]
 })
 export class IconsComponent {
-
+  @Input() skill: string = ``;
 }
