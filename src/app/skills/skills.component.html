@@ -1,9 +1,11 @@
-<div class="skills">
+<div class="skills" id="skills">
   <img src="./../../assets/img/vector.png" alt="" />
 
   <div class="wrapper">
     <div class="left">
-      <app-icons *ngFor="let skill of skills" [skill]="skill"></app-icons>
+      <div class="row" *ngFor="let items of skills">
+        <app-icons *ngFor="let skill of items" [skill]="skill"></app-icons>
+      </div>
     </div>
     <div class="right">
       <h1>SKILLS</h1>
