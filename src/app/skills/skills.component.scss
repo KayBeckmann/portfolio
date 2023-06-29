@@ -1,9 +1,45 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    height: 350px;
+    // z-index: 1;
+    width: 100%;
+    // object-fit: fill;
+    margin-top: -150px;
+  }
+}
+
 .wrapper {
-  background-color: black;
+  // background-color: yellow;
+  // background-color: #141d2f;
+  // z-index: 100;
   color: white;
   width: 100vw;
-  height: 100vh;
+  // height: 100vh;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  h1 {
+    font-size: 56px;
+  }
+
+  .left {
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .right {
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
