@@ -1,0 +1,16 @@
+.portfolio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .card {
+    width: 45%;
+    height: 150px;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid lightgray;
+    border-radius: 15px;
+  }
+}
