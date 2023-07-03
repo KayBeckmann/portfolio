@@ -1,0 +1,26 @@
+.wrapper {
+  border-top: 4px solid #00bee8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left {
+    background-color: greenyellow;
+    margin-left: 25px;
+  }
+
+  .middle {
+    background-color: purple;
+  }
+
+  .right {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 25px;
+  }
+
+  .content {
+    width: 30%;
+  }
+}
