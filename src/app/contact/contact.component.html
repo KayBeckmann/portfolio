@@ -1,1 +1,20 @@
-<div class="wrapper" id="contact">CONTACT ME!!!!</div>
+<div class="wrapper" id="contact">
+  <div class="infobox" #infobox>Test</div>
+  <form (submit)="sendMail()" ngNativeValidate #myForm>
+    <input
+      [disabled]="isDisabled"
+      required
+      type="text"
+      name="name"
+      #nameField
+    />
+    <input
+      [disabled]="isDisabled"
+      required
+      type="text"
+      name="message"
+      #messageField
+    />
+    <button [disabled]="isDisabled" class="primary" #sendButton>Send</button>
+  </form>
+</div>

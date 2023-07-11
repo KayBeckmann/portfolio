@@ -1,5 +1,16 @@
 .wrapper {
-  background-color: greenyellow;
   width: 100dvw;
   height: 250px;
+}
+
+form {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  input {
+    width: 40%;
+  }
 }
