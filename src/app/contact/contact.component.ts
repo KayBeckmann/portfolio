@@ -38,9 +38,11 @@ export class ContactComponent {
       }
     )
       .then((res) => {
-        this.showInfobox(true);
+        this.showInfobox(res.ok);
       })
       .catch((err) => {
+        console.log("ERROR");
+
         this.showInfobox(false);
       });
   }
@@ -49,6 +51,7 @@ export class ContactComponent {
     // let infobox = this.infobox.nativeElement;
     let infobox: any = document.getElementById("infobox");
     let message: String;
+    console.log(result);
 
     infobox.classList.remove("d-none");
     if (result) {
@@ -58,5 +61,24 @@ export class ContactComponent {
     }
 
     infobox.innerHTML = message;
+    this.enableElements(result);
+  }
+
+  enableElements(result: Boolean) {
+    let nameField = this.nameField.nativeElement;
+    let messageField = this.messageField.nativeElement;
+    let emailField = this.emailField.nativeElement;
+
+    if (result) {
+      nameField.value = "";
+      messageField.value = "";
+      emailField.value = "";
+    }
+
+    setTimeout(() => {
+      let infobox: any = document.getElementById("infobox");
+      infobox.classList.add("d-none");
+      this.isDisabled = false;
+    }, 3000);
   }
 }
