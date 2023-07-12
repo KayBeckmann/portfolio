@@ -11,6 +11,7 @@ export class ContactComponent {
   @ViewChild("emailField") emailField!: ElementRef;
   @ViewChild("messageField") messageField!: ElementRef;
   @ViewChild("sendButton") sendButton!: ElementRef;
+  @ViewChild("infobox") infobox!: ElementRef;
   isDisabled: boolean = false;
 
   constructor() {}
@@ -36,9 +37,26 @@ export class ContactComponent {
         body: formdata
       }
     )
-      .then((res) => {})
+      .then((res) => {
+        this.showInfobox(true);
+      })
       .catch((err) => {
-        console.error(err);
+        this.showInfobox(false);
       });
+  }
+
+  showInfobox(result: Boolean) {
+    // let infobox = this.infobox.nativeElement;
+    let infobox: any = document.getElementById("infobox");
+    let message: String;
+
+    infobox.classList.remove("d-none");
+    if (result) {
+      message = "Your Mail was send.";
+    } else {
+      message = "There was an error, please try again.";
+    }
+
+    infobox.innerHTML = message;
   }
 }

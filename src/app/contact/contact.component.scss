@@ -4,6 +4,11 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 25px;
+
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
 }
 
 .d-none {
@@ -27,11 +32,15 @@
 }
 
 .text {
-  background-color: purple;
   width: 50%;
 
   h2 {
     margin-top: 15px;
+    font-size: 2rem;
+  }
+
+  span {
+    font-weight: bold;
   }
 }
 
