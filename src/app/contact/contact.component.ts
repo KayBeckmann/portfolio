@@ -16,6 +16,9 @@ export class ContactComponent {
 
   constructor() {}
 
+  /**
+   * link the HTML-Elements and generate Formdata to transmitt
+   */
   async sendMail() {
     let nameField = this.nameField.nativeElement;
     let messageField = this.messageField.nativeElement;
@@ -29,6 +32,10 @@ export class ContactComponent {
     this.fetchData(formdata);
   }
 
+  /**
+   * Sending Formdata to server, for generating email.
+   * @param formdata JSON
+   */
   async fetchData(formdata: any) {
     await fetch(
       "https://kay-beckmann.developerakademie.net/send_mail/send_mail.php",
@@ -47,6 +54,10 @@ export class ContactComponent {
       });
   }
 
+  /**
+   * Generate Infobox, after getting respons of the Server
+   * @param result BOOLEAN
+   */
   showInfobox(result: Boolean) {
     // let infobox = this.infobox.nativeElement;
     let infobox: any = document.getElementById("infobox");
@@ -64,6 +75,10 @@ export class ContactComponent {
     this.enableElements(result);
   }
 
+  /**
+   * Enables and clear the Input fields and hide the infobox
+   * @param result BOOLEAN
+   */
   enableElements(result: Boolean) {
     let nameField = this.nameField.nativeElement;
     let messageField = this.messageField.nativeElement;

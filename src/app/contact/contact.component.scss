@@ -55,12 +55,16 @@ form {
 
   input {
     width: 80%;
-    height: 35px;
+    height: 40px;
     border: 1px solid #00bee8;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: #141d2f;
     color: white;
     padding-left: 15px;
     font-size: 1.3rem;
+
+    :active {
+      border: 1px solid #00bee8;
+    }
   }
 }
