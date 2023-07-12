@@ -8,6 +8,7 @@ import { Component, ElementRef, ViewChild } from "@angular/core";
 export class ContactComponent {
   @ViewChild("myForm") myForm!: ElementRef;
   @ViewChild("nameField") nameField!: ElementRef;
+  @ViewChild("emailField") emailField!: ElementRef;
   @ViewChild("messageField") messageField!: ElementRef;
   @ViewChild("sendButton") sendButton!: ElementRef;
   isDisabled: boolean = false;
@@ -17,9 +18,10 @@ export class ContactComponent {
   async sendMail() {
     let nameField = this.nameField.nativeElement;
     let messageField = this.messageField.nativeElement;
+    let emailField = this.emailField.nativeElement;
     let formdata = new FormData();
     formdata.append("name", nameField.value);
-    formdata.append("message", messageField.value);
+    formdata.append("message", emailField.value + " " + messageField.value);
 
     this.isDisabled = true;
 

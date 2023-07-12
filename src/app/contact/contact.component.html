@@ -1,20 +1,41 @@
 <div class="wrapper" id="contact">
-  <div class="infobox" #infobox>Test</div>
-  <form (submit)="sendMail()" ngNativeValidate #myForm>
-    <input
-      [disabled]="isDisabled"
-      required
-      type="text"
-      name="name"
-      #nameField
-    />
-    <input
-      [disabled]="isDisabled"
-      required
-      type="text"
-      name="message"
-      #messageField
-    />
-    <button [disabled]="isDisabled" class="primary" #sendButton>Send</button>
-  </form>
+  <div class="infobox d-none" #infobox>Test</div>
+  <h1>CONTACT</h1>
+  <div class="content">
+    <div class="text">
+      <h2>Got a problem to solve?</h2>
+      <div>
+        Contact me trough this form, I am interested in hearing you, knowing
+        your ideas and contribut to your projects with my work. Need a Frontend
+        developer? <span>Contact me!</span>
+      </div>
+    </div>
+    <form (submit)="sendMail()" ngNativeValidate #myForm>
+      <input
+        [disabled]="isDisabled"
+        required
+        type="text"
+        name="name"
+        placeholder="Your name"
+        #nameField
+      />
+      <input
+        [disabled]="isDisabled"
+        required
+        type="email"
+        name="email"
+        placeholder="Your email"
+        #emailField
+      />
+      <input
+        [disabled]="isDisabled"
+        required
+        type="text"
+        name="message"
+        placeholder="Your message"
+        #messageField
+      />
+      <button [disabled]="isDisabled" class="primary" #sendButton>Send</button>
+    </form>
+  </div>
 </div>
