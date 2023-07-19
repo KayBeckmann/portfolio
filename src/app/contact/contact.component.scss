@@ -68,3 +68,24 @@ form {
     }
   }
 }
+
+/*
+input {
+  &.ngtouched,
+  &.ng-dirty {
+    background-repeat: no-repeat;
+    background-position: 98%;
+    &.ng-invalid {
+      border: 1px solid #e61c40 !important;
+      background-image: url("./../../assets/img/alert.png");
+    }
+    &.ng-valid {
+      border: 1px solid #70e61c !important;
+      background-image: url("./../../assets/img/checked.png");
+    }
+  }
+  .error {
+    color: red;
+  }
+}
+*/
