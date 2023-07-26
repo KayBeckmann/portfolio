@@ -7,9 +7,20 @@ import { Component } from "@angular/core";
 })
 export class SkillsComponent {
   skills = [
-    ["html", "css", "javascript", "typescript"],
-    ["angular", "firebase", "api"],
-    ["git", "automation"],
-    ["scrum"]
-  ]; //, "wordpress"]
+    "html",
+    "css",
+    "javascript",
+    "typescript",
+    "angular",
+    "firebase",
+    "api",
+    "git",
+    "automation",
+    "scrum"
+  ];
+  // ["html", "css", "javascript", "typescript"],
+  // ["angular", "firebase", "api"],
+  // ["git", "automation"],
+  // ["scrum"]
+  //]; //, "wordpress"]
 }
