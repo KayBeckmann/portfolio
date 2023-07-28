@@ -7,6 +7,13 @@
 
   .left {
     margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 40%;
+      height: auto;
+    }
   }
 
   .middle {
@@ -38,8 +45,4 @@ h1 {
 a {
   text-decoration: none;
   color: white;
-}
-
-img:hover {
-  scale: 1.3;
 }
