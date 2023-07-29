@@ -20,6 +20,20 @@ nav {
   }
 }
 
+.nav-mobile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: #414856;
+  z-index: 900;
+  position: fixed;
+  top:0;
+}
+
 .left {
   padding-left: 37px;
 }
@@ -49,6 +63,8 @@ nav {
     border-bottom: 3px solid #9747ff;
   }
 }
+
+.d.none{display: none;}
 
 @media (max-width: 700px) {
   .desktop {
