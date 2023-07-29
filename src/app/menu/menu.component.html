@@ -11,13 +11,20 @@
       <a href="#portfolio">Portfolio</a>
     </div>
     <div class="mobile">
-      <img class="pointer" src="./assets/icons/burgermenu.png" alt="burger" />
+      <img
+        class="pointer"
+        src="./assets/icons/burgermenu.png"
+        alt="burger"
+        (click)="toggleMenu()"
+      />
     </div>
   </div>
 </nav>
-<div class="nav-mobile d-none">
-  <div>About Me</div>
-  <div>Skills</div>
-  <div>Portfolio</div>
-  <div>Contact</div>
+<!-- Mobil Menu -->
+<!-- ToDo: links als div, mit Funktion: goTo(string) -->
+<div class="nav-mobile d-none" id="mobilemenu">
+  <div class="pointer" (click)="goTo('aboutMe')">About Me</div>
+  <div class="pointer" (click)="goTo('skills')">Skills</div>
+  <div class="pointer" (click)="goTo('portfolio')">Portfolio</div>
+  <div class="pointer" (click)="goTo('contact')">Contact</div>
 </div>

@@ -8,19 +8,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  h1 {
-    font-size: clamp(1.125rem, 0.739rem + 1.93vw, 2.188rem);
-    font-weight: bold;
-
-    a {
-      text-decoration: none;
-      color: white;
-    }
-  }
 }
 
-.nav-mobile{
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-mobile {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +26,7 @@ nav {
   background-color: #414856;
   z-index: 900;
   position: fixed;
-  top:0;
+  top: 0;
 }
 
 .left {
@@ -42,12 +37,11 @@ nav {
   display: none;
 }
 
-.right{  
+.right {
   padding-right: 37px;
 }
 
 .desktop {
-
   a {
     text-decoration: none;
     font-size: clamp(0.75rem, 0.386rem + 1.82vw, 1.75rem);
@@ -64,7 +58,9 @@ nav {
   }
 }
 
-.d.none{display: none;}
+.d-none {
+  display: none;
+}
 
 @media (max-width: 700px) {
   .desktop {
@@ -72,8 +68,8 @@ nav {
   }
 
   .mobile {
-  display:flex;
-  height: 25px;
-  width: auto;
+    display: flex;
+    height: 25px;
+    width: auto;
   }
 }
