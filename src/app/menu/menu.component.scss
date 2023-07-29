@@ -28,8 +28,11 @@ nav {
   display: none;
 }
 
-.desktop {
+.right{  
   padding-right: 37px;
+}
+
+.desktop {
 
   a {
     text-decoration: none;
@@ -53,9 +56,8 @@ nav {
   }
 
   .mobile {
-    color: white;
-    background-color: #9747ff;
-    width: 20px;
-    height: 25px;
+  display:flex;
+  height: 25px;
+  width: auto;
   }
 }
