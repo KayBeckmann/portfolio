@@ -8,6 +8,7 @@
 .left {
   width: 49%;
   padding: 35px;
+  z-index: 10;
 }
 
 h1 {
@@ -19,7 +20,7 @@ h1 {
   width: 49%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
 }
 
 img {
