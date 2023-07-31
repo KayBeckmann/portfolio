@@ -6,9 +6,11 @@
   </div>
   <div class="right">
     <div class="desktop">
-      <a href="#aboutMe" class="aktive">About me</a>
-      <a href="#skills">Skills</a>
-      <a href="#portfolio">Portfolio</a>
+      <a href="#aboutMe" (click)="setActive('aboutme')" #aboutme>About me</a>
+      <a href="#skills" (click)="setActive('skills')" #skills>Skills</a>
+      <a href="#portfolio" (click)="setActive('portfolio')" #portfolio
+        >Portfolio</a
+      >
     </div>
     <div class="mobile">
       <img

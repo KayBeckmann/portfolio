@@ -33,4 +33,9 @@ export class MenuComponent {
     }
     console.log("TOGGLE");
   }
+
+  setActive(name: string) {
+    alert(name);
+    //class="aktive"
+  }
 }
