@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ElementRef, ViewChild } from "@angular/core";
 
 @Component({
   selector: "app-menu",
@@ -7,6 +7,9 @@ import { Component } from "@angular/core";
 })
 export class MenuComponent {
   element!: HTMLElement;
+  @ViewChild("aboutme") aboutme!: ElementRef;
+  @ViewChild("skills") skills!: ElementRef;
+  @ViewChild("portfolio") portfolio!: ElementRef;
 
   constructor() {}
 
