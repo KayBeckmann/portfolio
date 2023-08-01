@@ -14,6 +14,7 @@ import { FooterComponent } from "./footer/footer.component";
 import { IconsComponent } from "./icons/icons.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { SozialmedialinksComponent } from './sozialmedialinks/sozialmedialinks.component';
+import { ProjectcardComponent } from './projectcard/projectcard.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SozialmedialinksComponent } from './sozialmedialinks/sozialmedialinks.c
     ContactComponent,
     FooterComponent,
     IconsComponent,
-    SozialmedialinksComponent
+    SozialmedialinksComponent,
+    ProjectcardComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
