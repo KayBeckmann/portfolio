@@ -7,8 +7,5 @@
   </p>
 </div>
 <div class="portfolio">
-  <div class="card">EPL</div>
-  <div class="card">Join</div>
-  <div class="card">CRM</div>
-  <div class="card">Ring of Fire</div>
+  <app-projectcard *ngFor="let item of list" [item]="item"></app-projectcard>
 </div>
