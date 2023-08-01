@@ -38,7 +38,32 @@ export class MenuComponent {
   }
 
   setActive(name: string) {
-    alert(name);
+    let about = this.aboutme.nativeElement;
+    let skill = this.skills.nativeElement;
+    let pf = this.portfolio.nativeElement;
+
+    this.deactivate();
+
+    if (name == "aboutme") {
+      about.classList.add("aktive");
+    }
+    if (name == "skills") {
+      skill.classList.add("aktive");
+    }
+    if (name == "portfolio") {
+      pf.classList.add("aktive");
+    }
+
     //class="aktive"
+  }
+
+  deactivate() {
+    let about = this.aboutme.nativeElement;
+    let skill = this.skills.nativeElement;
+    let pf = this.portfolio.nativeElement;
+
+    about.classList.remove("aktive");
+    skill.classList.remove("aktive");
+    pf.classList.remove("aktive");
   }
 }
