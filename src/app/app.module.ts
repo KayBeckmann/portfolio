@@ -15,6 +15,7 @@ import { IconsComponent } from "./icons/icons.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { SozialmedialinksComponent } from './sozialmedialinks/sozialmedialinks.component';
 import { ProjectcardComponent } from './projectcard/projectcard.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ProjectcardComponent } from './projectcard/projectcard.component';
     FooterComponent,
     IconsComponent,
     SozialmedialinksComponent,
-    ProjectcardComponent
+    ProjectcardComponent,
+    ImpressumComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
