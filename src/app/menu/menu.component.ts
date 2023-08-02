@@ -37,6 +37,10 @@ export class MenuComponent {
     console.log("TOGGLE");
   }
 
+  /**
+   * add class 'Active' to selected item
+   * @param name Name of the active item
+   */
   setActive(name: string) {
     let about = this.aboutme.nativeElement;
     let skill = this.skills.nativeElement;
@@ -45,25 +49,26 @@ export class MenuComponent {
     this.deactivate();
 
     if (name == "aboutme") {
-      about.classList.add("aktive");
+      about.classList.add("active");
     }
     if (name == "skills") {
-      skill.classList.add("aktive");
+      skill.classList.add("active");
     }
     if (name == "portfolio") {
-      pf.classList.add("aktive");
+      pf.classList.add("active");
     }
-
-    //class="aktive"
   }
 
+  /**
+   * remove class 'Active' from all items
+   */
   deactivate() {
     let about = this.aboutme.nativeElement;
     let skill = this.skills.nativeElement;
     let pf = this.portfolio.nativeElement;
 
-    about.classList.remove("aktive");
-    skill.classList.remove("aktive");
-    pf.classList.remove("aktive");
+    about.classList.remove("active");
+    skill.classList.remove("active");
+    pf.classList.remove("active");
   }
 }
