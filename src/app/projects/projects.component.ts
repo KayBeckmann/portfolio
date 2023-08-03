@@ -9,12 +9,27 @@ export class ProjectsComponent {
   list = [
     {
       title: "El Pollo Loco",
-      description: "Some text to explain the project",
+      description: "Jump and run game.",
       github: "https://#",
       live: "https://#"
     },
-    { title: "Join" },
-    { title: "CRM" },
-    { title: "Ring of fire" }
+    {
+      title: "Join",
+      description: "Canban Board for your projects.",
+      github: "https://#",
+      live: "https://#"
+    },
+    {
+      title: "CRM",
+      description: "Project don't finished jet",
+      github: "https://#",
+      live: "https://#"
+    },
+    {
+      title: "Ring of fire",
+      description: "Online drinking game with your friends.",
+      github: "https://#",
+      live: "https://#"
+    }
   ];
 }
