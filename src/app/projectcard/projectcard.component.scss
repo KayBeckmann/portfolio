@@ -1,8 +1,31 @@
 .card {
   width: 600px;
-  height: 600px;
+  height: 80dvh;
   margin: 10px;
   padding: 10px;
   border: 1px solid #00bee8;
   border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  .description {
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .card {
+    width: 280px;
+  }
 }
