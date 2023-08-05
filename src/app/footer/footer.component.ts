@@ -8,19 +8,10 @@ import { Router } from "@angular/router";
 export class FooterComponent {
   constructor(private router: Router) {}
 
+  /**
+   * Open route to imprint
+   */
   impressum() {
     this.router.navigateByUrl("/impressum");
   }
 }
-
-/*
-async newGame() {
-    const docRef: any = await addDoc(
-      this.gameCollection,
-      this.game.toJson()
-    ).then((gameInfo: any) => {
-      let URL = "/game/" + gameInfo.id;
-      this.router.navigateByUrl(URL);
-    });
-  }
-*/
