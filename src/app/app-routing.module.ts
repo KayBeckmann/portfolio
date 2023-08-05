@@ -6,6 +6,7 @@ import { ImpressumComponent } from "./impressum/impressum.component";
 const routes: Routes = [
   { path: ``, component: PortfolioComponent },
   { path: `impressum`, component: ImpressumComponent }
+  //{ path: `game/:id`, component: GameComponent }
 ];
 
 @NgModule({

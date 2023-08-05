@@ -8,3 +8,9 @@
 img:hover {
   scale: 1.4;
 }
+
+@media (max-width: 700px) {
+  .content {
+    margin-right: 0;
+  }
+}

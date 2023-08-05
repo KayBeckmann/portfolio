@@ -19,6 +19,7 @@
   .middle {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .right {
@@ -62,6 +63,12 @@ a {
         width: 70%;
         height: auto;
       }
+    }
+
+    .right {
+      display: flex;
+      justify-content: center;
+      margin-right: 0;
     }
   }
 }
