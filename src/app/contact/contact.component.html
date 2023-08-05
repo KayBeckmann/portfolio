@@ -27,14 +27,14 @@
         placeholder="Your email"
         #emailField
       />
-      <input
+      <textarea
         [disabled]="isDisabled"
         required
         type="text"
         name="message"
         placeholder="Your message"
         #messageField
-      />
+      ></textarea>
       <button [disabled]="isDisabled" class="primary" #sendButton>Send</button>
     </form>
   </div>

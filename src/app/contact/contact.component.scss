@@ -53,7 +53,8 @@ form {
   gap: 15px;
   padding-top: 15px;
 
-  input {
+  input,
+  textarea {
     width: 80%;
     height: 40px;
     border: 1px solid #00bee8;
@@ -66,6 +67,10 @@ form {
     :active {
       border: 1px solid #00bee8;
     }
+  }
+
+  textarea {
+    height: 7.5rem;
   }
 }
 
@@ -80,11 +85,13 @@ form {
   .text {
     width: 90dvw;
   }
-  .form {
-    width: 90dvw !important;
 
-    input {
-      width: 100%;
+  form {
+    width: 90%;
+
+    input,
+    textarea {
+      width: 90%;
     }
   }
 }
