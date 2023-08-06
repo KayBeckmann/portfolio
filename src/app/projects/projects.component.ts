@@ -10,21 +10,24 @@ export class ProjectsComponent {
     {
       title: "El Pollo Loco",
       description: "Jump and run game.",
-      img: "",
+      img: "./assets/project-img/epl.png",
+      technic: ["HTML", "CSS", "JavaScript", "OOP"],
       github: "https://github.com/KayBeckmann/el_pollo_loco",
       live: "https://#"
     },
     {
       title: "Join",
       description: "Canban Board for your projects.",
-      img: "",
+      img: "./assets/project-img/join.png",
+      technic: ["HTML", "CSS", "JavaScript", "Group project"],
       github: "https://github.com/KayBeckmann/join",
       live: "https://#"
     },
     /*{
       title: "CRM",
       description: "Project don't finished jet",
-      img:"",
+      img:"./assets/project-img/crm.png",
+      technic:[],
       github: "https://#",
       live: "https://#"
     },*/
@@ -32,6 +35,7 @@ export class ProjectsComponent {
       title: "Ring of fire",
       description: "Online drinking game with your friends.",
       img: "",
+      technic: ["Angular", "TypeScript", "Firebase"],
       github: "https://github.com/KayBeckmann/ringoffire",
       live: "https://#"
     },
@@ -39,6 +43,7 @@ export class ProjectsComponent {
       title: "Portfolio",
       description: "This page.",
       img: "",
+      technic: ["Angular", "TypeScript"],
       github: "https://github.com/KayBeckmann/portfolio",
       live: "https://#"
     }
