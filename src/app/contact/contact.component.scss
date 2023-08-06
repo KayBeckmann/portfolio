@@ -12,17 +12,23 @@
 }
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .infobox {
-  background-color: #27334b;
-  width: 300px;
-  height: auto;
-  padding: 15px;
   border: 1px solid #00bee8;
-  border-radius: 15px;
-  text-align: center;
+  border-radius: 10px;
+  background-color: #141d2f;
+  color: white;
+  padding-left: 15px;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  width: 45%;
+  height: 320px;
 }
 
 .content {
@@ -93,6 +99,11 @@ form {
     textarea {
       width: 90%;
     }
+  }
+
+  .infobox {
+    width: 90%;
+    height: 320px;
   }
 }
 

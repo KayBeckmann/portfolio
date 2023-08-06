@@ -1,5 +1,4 @@
-<div class="wrapper">
-  <div class="infobox d-none" id="infobox" #infobox>Test</div>
+<div class="wrapper" id="contact">
   <h1>CONTACT</h1>
   <div class="content">
     <div class="text">
@@ -11,6 +10,7 @@
       </div>
     </div>
     <form (submit)="sendMail()" ngNativeValidate #myForm>
+      <div class="infobox d-none" id="infobox" #infobox>Test</div>
       <input
         [disabled]="isDisabled"
         required
