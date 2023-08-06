@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-menu",
@@ -11,7 +12,7 @@ export class MenuComponent {
   @ViewChild("skills") skills!: ElementRef;
   @ViewChild("portfolio") portfolio!: ElementRef;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   /**
    * Go to Section with HTML-ID
@@ -34,7 +35,6 @@ export class MenuComponent {
     } else {
       this.element.classList.add("d-none");
     }
-    console.log("TOGGLE");
   }
 
   /**
