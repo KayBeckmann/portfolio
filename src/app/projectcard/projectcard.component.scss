@@ -1,5 +1,5 @@
 .card {
-  width: 500px;
+  width: 45dvw;
   height: auto;
   margin: 10px;
   padding: 10px;
@@ -18,14 +18,8 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .card {
-    width: 400px;
-  }
-}
-
-@media (max-width: 450px) {
-  .card {
-    width: 280px;
+    width: 90dvw;
   }
 }
