@@ -1,25 +1,50 @@
 .card {
   width: 45dvw;
-  height: auto;
+  height: 450px;
   margin: 10px;
   padding: 10px;
   border: 1px solid #00bee8;
   border-radius: 15px;
 
   display: flex;
-  flex-direction: column;
+  position: relative;
 
-  .description {
+  img {
+    position: absolute;
+    z-index: 1;
+    max-width: 45dvw;
+    min-width: 35dvw;
+    height: auto;
   }
 
-  a {
-    text-decoration: none;
-    color: white;
+  .content {
+    display: none;
+    height: 450px;
+    width: auto;
+    z-index: 10;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  :hover {
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: end;
+    }
   }
 }
 
 @media (max-width: 900px) {
   .card {
     width: 90dvw;
+
+    .img {
+      width: 90dvw;
+    }
   }
 }
