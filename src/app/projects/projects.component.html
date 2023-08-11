@@ -1,11 +1,17 @@
-<div class="wrapper"></div>
-<div class="headline">
-  <h1>Portfolio</h1>
-  <p>
-    This page is a sample of my work. Scroll down to view other projects I have
-    developed.
-  </p>
-</div>
-<div class="portfolio">
-  <app-projectcard *ngFor="let item of list" [item]="item"></app-projectcard>
+<div class="wrapper">
+  <div class="headline">
+    <h1>Portfolio</h1>
+    <p>
+      This page is a sample of my work. Scroll down to view other projects I
+      have developed.
+    </p>
+  </div>
+  <div class="wrappercontent">
+    <div class="portfolio">
+      <app-projectcard
+        *ngFor="let item of list"
+        [item]="item"
+      ></app-projectcard>
+    </div>
+  </div>
 </div>
