@@ -6,8 +6,17 @@
     <div class="content">
       <h1>{{ item.title }}</h1>
       <div class="description">{{ item.description }}</div>
-      <a href="{{ item.github }}" target="_blank">Github</a>
-      <a href="{{ item.live }}" target="_blank">Try it</a>
+      <div class="tech">
+        <span *ngFor="let tech of item.technic">{{ tech }} | </span>
+      </div>
+      <div class="buttons">
+        <a class="button primary" href="{{ item.github }}" target="_blank"
+          >Github</a
+        >
+        <a class="button secondary" href="{{ item.live }}" target="_blank"
+          >Try it</a
+        >
+      </div>
     </div>
   </div>
 </div>
