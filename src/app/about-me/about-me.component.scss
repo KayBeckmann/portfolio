@@ -1,32 +1,27 @@
 .wrapper {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  gap: 15px;
   margin-bottom: 50px;
 }
 
 .left {
-  width: 49%;
-  padding: 35px;
+  // width: 45%;
   z-index: 10;
-}
-
-h1 {
-  font-size: clamp(2rem, 1.167rem + 4.44vw, 4.5rem);
 }
 
 .right {
   background-image: url("./../../assets/img/shadow_3.png");
-  width: 49%;
+  // width: 45%;
   display: flex;
   justify-content: center;
   align-items: end;
-}
 
-img {
-  width: 70%;
-  object-fit: fill;
+  img {
+    width: 90%;
+    object-fit: fill;
+  }
 }
 
 .information {
@@ -47,7 +42,7 @@ img {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .wrapper {
     width: 100%;
     display: flex;

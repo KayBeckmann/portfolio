@@ -1,14 +1,8 @@
 .wrapper {
-  width: 100dvw;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 25px;
-
-  h1 {
-    font-size: 4rem;
-    font-weight: bold;
-  }
 }
 
 .d-none {
@@ -21,29 +15,25 @@
   background-color: #141d2f;
   color: white;
   padding-left: 15px;
-  font-size: 1.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   z-index: 10;
-  width: 45%;
+  width: 42%;
   height: 320px;
 }
 
 .content {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   width: 100dvw;
 }
 
 .text {
-  width: 50%;
-
-  h2 {
-    margin-top: 15px;
-    font-size: 2rem;
-  }
+  width: 45%;
+  margin-bottom: 15px;
 
   span {
     font-weight: bold;
@@ -55,13 +45,13 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 45%;
   gap: 15px;
   padding-top: 15px;
 
   input,
   textarea {
-    width: 80%;
+    width: 90%;
     height: 40px;
     border: 1px solid #00bee8;
     border-radius: 10px;
@@ -80,7 +70,7 @@ form {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .content {
     display: flex;
     flex-direction: column;
@@ -94,11 +84,6 @@ form {
 
   form {
     width: 90%;
-
-    input,
-    textarea {
-      width: 90%;
-    }
   }
 
   .infobox {

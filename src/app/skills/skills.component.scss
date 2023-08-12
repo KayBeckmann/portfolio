@@ -4,53 +4,40 @@
 
   img {
     height: 350px;
-    width: 100%;
+    width: 100dvw;
     margin-top: -150px;
   }
 }
 
 .wrapper {
-  color: white;
-  width: 100dvw;
+  background-color: green;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-
-  h1 {
-    font-size: 56px;
-  }
+  justify-content: space-around;
+  gap: 15px;
 
   .left {
+    background-color: grey;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    margin: 10px;
-
-    .row {
-      margin: 10px;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-    }
+    width: 45dvw;
   }
 
   .right {
+    background-color: purple;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    width: 100%;
-
-    p {
-      font-size: 1.1rem;
-    }
+    width: 45dvw;
+    margin-bottom: 10px;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
   .desktop {
     display: none;
   }

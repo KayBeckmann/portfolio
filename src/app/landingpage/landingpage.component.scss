@@ -1,6 +1,5 @@
 .wrapper {
   height: 100dvh;
-  width: 100dvw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,6 +27,10 @@
     font-size: clamp(1rem, -0.091rem + 5.45vw, 4rem);
     margin: 0;
   }
+}
+
+.backgrounds {
+  overflow: hidden;
 }
 
 .background {
