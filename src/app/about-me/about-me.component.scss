@@ -1,20 +1,9 @@
 .wrapper {
   grid-template-columns: 3fr 2fr;
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: space-around;
-  // gap: 15px;
-  // margin-bottom: 50px;
-}
-
-.left {
 }
 
 .right {
   background-image: url("./../../assets/img/shadow_3.png");
-  display: flex;
-  justify-content: center;
-  align-items: end;
 
   img {
     width: 90%;
@@ -42,22 +31,15 @@
 
 @media (max-width: 800px) {
   .wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    // justify-content: space-around;
+    grid-template-columns: 1fr;
   }
 
   .right {
+    order: 1;
     background-image: url("./../../assets/img/shadow_3.png");
-    width: 100dvw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .left {
-    width: 90%;
+    order: 2;
   }
 }

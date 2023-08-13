@@ -13,7 +13,7 @@ export class ProjectsComponent {
       img: "./assets/project-img/epl.png",
       technic: ["HTML", "CSS", "JavaScript", "OOP"],
       github: "https://github.com/KayBeckmann/el_pollo_loco",
-      live: "https://#"
+      live: "https://kay-beckmann.developerakademie.net/el_pollo_loco/index.html"
     },
     {
       title: "Join",
@@ -21,7 +21,7 @@ export class ProjectsComponent {
       img: "./assets/project-img/join.png",
       technic: ["HTML", "CSS", "JavaScript", "Group project"],
       github: "https://github.com/KayBeckmann/join",
-      live: "https://#"
+      live: "https://kay-beckmann.developerakademie.net/join/index.html"
     },
     /*{
       title: "CRM",
@@ -34,18 +34,18 @@ export class ProjectsComponent {
     {
       title: "Ring of fire",
       description: "Online drinking game with your friends.",
-      img: "",
+      img: "./assets/project-img/rof.jpg",
       technic: ["Angular", "TypeScript", "Firebase"],
       github: "https://github.com/KayBeckmann/ringoffire",
-      live: "https://#"
+      live: "https://kay-beckmann.developerakademie.net/ringoffire/"
     },
     {
       title: "Portfolio",
-      description: "This page.",
-      img: "",
+      description: "This page. No project for final portfolio.",
+      img: "./assets/project-img/pf.png",
       technic: ["Angular", "TypeScript"],
       github: "https://github.com/KayBeckmann/portfolio",
-      live: "https://#"
+      live: "https://kay-beckmann.developerakademie.net/portfolio/"
     }
   ];
 }
