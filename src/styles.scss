@@ -20,7 +20,7 @@ body {
   font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: clamp(1rem, 0.933rem + 0.36vw, 1.2rem);
   color: white;
-  // overflow-x: hidden !important;
+  overflow-x: hidden !important;
 }
 
 button {
@@ -51,9 +51,8 @@ h2 {
 }
 
 .wrapper {
-  max-width: 100dvw;
-  right: 0;
-  left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding-left: 20px;
   padding-right: 20px;
 }

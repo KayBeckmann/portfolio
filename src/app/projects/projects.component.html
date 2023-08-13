@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapperprojects">
   <div class="headline">
     <h1>Portfolio</h1>
     <div>
@@ -6,12 +6,7 @@
       have developed.
     </div>
   </div>
-  <div class="wrappercontent">
-    <div class="portfolio">
-      <app-projectcard
-        *ngFor="let item of list"
-        [item]="item"
-      ></app-projectcard>
-    </div>
+  <div class="wrapper">
+    <app-projectcard *ngFor="let item of list" [item]="item"></app-projectcard>
   </div>
 </div>

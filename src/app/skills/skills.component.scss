@@ -4,30 +4,21 @@
 
   img {
     height: 350px;
-    width: 100dvw;
+    width: 98dvw;
     margin-top: -150px;
   }
 }
 
 .wrapper {
-  background-color: green;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  gap: 15px;
-
   .left {
-    background-color: grey;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     width: 45dvw;
   }
 
   .right {
-    background-color: purple;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

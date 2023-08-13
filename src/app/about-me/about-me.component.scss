@@ -1,19 +1,17 @@
 .wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 15px;
-  margin-bottom: 50px;
+  grid-template-columns: 3fr 2fr;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-around;
+  // gap: 15px;
+  // margin-bottom: 50px;
 }
 
 .left {
-  // width: 45%;
-  z-index: 10;
 }
 
 .right {
   background-image: url("./../../assets/img/shadow_3.png");
-  // width: 45%;
   display: flex;
   justify-content: center;
   align-items: end;

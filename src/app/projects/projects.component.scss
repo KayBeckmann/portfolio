@@ -1,20 +1,11 @@
-.wrapper {
-  background-color: greenyellow;
-}
+.wrapperprojects {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 20px;
+  padding-right: 20px;
 
-/*
-.wrappercontent {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
-
-.portfolio {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  width: 100dvw;
-}
-*/
