@@ -87,13 +87,9 @@
 
 @media (max-width: 900px) {
   .card {
-    width: 340px;
-    height: 340px;
-
     &:hover {
       .content {
         display: flex;
-        height: 170px;
       }
     }
   }
@@ -101,10 +97,6 @@
 
 @media (max-width: 700px) {
   .card {
-    width: 90dvw;
-    height: auto;
-    min-height: 500px;
-
     &:hover {
       .content {
         display: flex;
