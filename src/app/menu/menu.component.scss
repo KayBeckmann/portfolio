@@ -15,6 +15,10 @@ a {
   color: white;
 }
 
+h1 {
+  font-size: clamp(2.4rem, 1.7rem + 3.73vw, 4.5rem);
+}
+
 .nav-mobile {
   display: flex;
   flex-direction: column;
@@ -54,12 +58,16 @@ a {
   }
 
   .active {
-    border-bottom: 3px solid #9747ff;
+    border-bottom: 3px solid #1cdae6;
   }
 }
 
 .d-none {
   display: none;
+}
+
+.coloriezed {
+  color: #4b47ff;
 }
 
 @media (max-width: 700px) {
