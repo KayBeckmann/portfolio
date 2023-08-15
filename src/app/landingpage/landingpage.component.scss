@@ -59,7 +59,12 @@
 }
 
 .footer-left {
-  margin-left: 50px;
+  display: flex;
+
+  hr {
+    width: 6dvw;
+    margin-right: 15px;
+  }
 }
 
 .footer-right {
