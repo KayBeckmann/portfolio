@@ -7,17 +7,31 @@ import { Component } from "@angular/core";
 })
 export class SkillsComponent {
   skills = [
-    "html",
-    "css",
-    "javascript",
-    "typescript",
-    "angular",
-    "firebase",
-    "api",
-    "git",
-    "automation",
-    "scrum"
+    ["html", "css", "javascript", "typescript"],
+    ["angular", "firebase", "api"],
+    ["git", "automation"],
+    ["scrum"]
   ];
+  // "html",
+  // "css",
+  // "javascript",
+  // "typescript",
+  // "angular",
+  // "firebase",
+  // "api",
+  // "git",
+  // "automation",
+  // "scrum"
+  // ];
+
+  gotoBottom() {
+    window.scroll({
+      top: document.body.scrollHeight,
+      left: 0,
+      behavior: "smooth"
+    });
+  }
+
   // ["html", "css", "javascript", "typescript"],
   // ["angular", "firebase", "api"],
   // ["git", "automation"],

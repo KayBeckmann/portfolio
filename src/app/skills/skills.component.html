@@ -3,13 +3,28 @@
 
   <div class="wrapper">
     <div class="left">
-      <app-icons *ngFor="let skill of skills" [skill]="skill"></app-icons>
+      <div class="row" *ngFor="let row of skills">
+        <app-icons *ngFor="let skill of row" [skill]="skill"></app-icons>
+      </div>
     </div>
     <div class="right">
-      <h1>SKILLS</h1>
-      <div>
-        I have gained experience in building projects with various front end
-        technologies and concepts.
+      <div class="text">
+        <div class="headline">
+          <h1>SKILLS</h1>
+          <!-- <hr /> -->
+        </div>
+        <div>
+          I have gained experience in building projects with various front end
+          technologies and concepts.
+        </div>
+      </div>
+      <div class="button">
+        <button
+          class="primary"
+          onClick="document.getElementById('contact').scrollIntoView();"
+        >
+          Let's talk!
+        </button>
       </div>
     </div>
   </div>

@@ -12,9 +12,11 @@
 .wrapper {
   .left {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: flex-start;
+
+    .row {
+      margin-bottom: 20px;
+    }
   }
 
   .right {
@@ -23,6 +25,30 @@
     align-items: flex-start;
     justify-content: center;
     margin-bottom: 10px;
+
+    .headline {
+      background-color: greenyellow;
+      display: flex;
+
+      h1 {
+        background-color: red;
+      }
+
+      hr {
+        width: 20px;
+      }
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .button {
+      margin-top: 15px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 
