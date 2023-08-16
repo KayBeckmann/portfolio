@@ -2,16 +2,19 @@
   <img class="desktop" src="./assets/img/vector.png" alt="" />
 
   <div class="wrapper">
-    <div class="left">
-      <div class="row" *ngFor="let row of skills">
+    <div class="left-desktop">
+      <div class="row" *ngFor="let row of skillsDesktop">
         <app-icons *ngFor="let skill of row" [skill]="skill"></app-icons>
       </div>
+    </div>
+    <div class="left-mobile">
+      <app-icons *ngFor="let skill of skillsMobile" [skill]="skill"></app-icons>
     </div>
     <div class="right">
       <div class="text">
         <div class="headline">
           <h1>SKILLS</h1>
-          <!-- <hr /> -->
+          <hr />
         </div>
         <div>
           I have gained experience in building projects with various front end
