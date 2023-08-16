@@ -6,23 +6,24 @@ import { Component } from "@angular/core";
   styleUrls: ["./skills.component.scss"]
 })
 export class SkillsComponent {
-  skills = [
+  skillsDesktop = [
     ["html", "css", "javascript", "typescript"],
     ["angular", "firebase", "api"],
     ["git", "automation"],
     ["scrum"]
   ];
-  // "html",
-  // "css",
-  // "javascript",
-  // "typescript",
-  // "angular",
-  // "firebase",
-  // "api",
-  // "git",
-  // "automation",
-  // "scrum"
-  // ];
+  skillsMobile = [
+    "html",
+    "css",
+    "javascript",
+    "typescript",
+    "angular",
+    "firebase",
+    "api",
+    "git",
+    "automation",
+    "scrum"
+  ];
 
   gotoBottom() {
     window.scroll({
