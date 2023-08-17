@@ -9,7 +9,7 @@ export class SkillsComponent {
   skillsDesktop = [
     ["html", "css", "javascript", "typescript"],
     ["angular", "firebase", "api"],
-    ["git", "automation"],
+    ["git", "materialdesign"],
     ["scrum"]
   ];
   skillsMobile = [
@@ -21,7 +21,7 @@ export class SkillsComponent {
     "firebase",
     "api",
     "git",
-    "automation",
+    "materialdesign",
     "scrum"
   ];
 

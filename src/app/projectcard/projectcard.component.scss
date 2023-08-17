@@ -84,7 +84,7 @@
     .img {
       overflow: hidden;
       img {
-        transform: scale(3.3);
+        transform: scale(3.1);
         filter: brightness(0.4);
       }
     }
@@ -103,29 +103,29 @@
 
 @media (max-width: 700px) {
   .card {
-    &:hover {
-      .content {
-        display: flex;
-        height: 100%;
+    // &:hover {
+    .content {
+      display: flex;
+      height: 100%;
 
-        .buttons {
-          margin-top: 300px;
-        }
+      .buttons {
+        margin-top: 300px;
       }
     }
+    // }
   }
 }
 
 @media (max-width: 450px) {
   .card {
-    &:hover {
-      .content {
-        .buttons {
-          margin-top: 350px;
-          flex-direction: column;
-          gap: 15px;
-        }
+    // &:hover {
+    .content {
+      .buttons {
+        margin-top: 350px;
+        flex-direction: column;
+        gap: 15px;
       }
     }
+    // }
   }
 }
