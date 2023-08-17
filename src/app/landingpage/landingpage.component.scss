@@ -27,7 +27,9 @@
     margin: 0;
   }
   h2 {
-    color: #4b47ff;
+    background: -webkit-linear-gradient(0deg, #1cdae6, #4b47ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: clamp(1rem, -0.091rem + 5.45vw, 4rem);
     margin: 0;
   }

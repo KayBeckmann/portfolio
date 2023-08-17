@@ -5,6 +5,16 @@
   padding-right: 20px;
 }
 
+.headline {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  align-items: center;
+
+  hr {
+    width: 100%;
+  }
+}
+
 .d-none {
   display: none !important;
 }
@@ -26,6 +36,7 @@
 
 .text {
   margin-bottom: 15px;
+  margin-left: -20px;
 
   span {
     font-weight: bold;
