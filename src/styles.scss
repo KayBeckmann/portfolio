@@ -97,7 +97,8 @@ h2 {
   border: 3px solid #141d2f;
 }
 
-.nav-menu::-webkit-scrollbar-thumb:horizontal {
-  height: 0px;
+*::-webkit-scrollbar-thumb:horizontal {
+  height: 1px;
   background: #141d2f;
+  border: 1px solid #141d2f;
 }
