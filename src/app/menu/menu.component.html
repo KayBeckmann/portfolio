@@ -6,29 +6,11 @@
     >
   </div>
   <div class="right">
-    <div class="desktop">
       <a href="#aboutMe" (click)="setActive('aboutme')" #aboutme>About me</a>
       <a href="#skills" (click)="setActive('skills')" #skills>Skills</a>
       <a href="#portfolio" (click)="setActive('portfolio')" #portfolio
         >Portfolio</a
       >
-    </div>
-    <div class="mobile">
-      <img
-        class="pointer"
-        src="./assets/icons/burgermenu.png"
-        alt="burger"
-        (click)="toggleMenu()"
-      />
-    </div>
   </div>
 </nav>
-</div>
-<!-- Mobil Menu -->
-<!-- ToDo: links als div, mit Funktion: goTo(string) -->
-<div class="nav-mobile d-none" id="mobilemenu">
-  <div class="text pointer" (click)="goTo('aboutMe')">About Me</div>
-  <div class="text pointer" (click)="goTo('skills')">Skills</div>
-  <div class="text pointer" (click)="goTo('portfolio')">Portfolio</div>
-  <div class="text pointer" (click)="goTo('contact')">Contact</div>
 </div>

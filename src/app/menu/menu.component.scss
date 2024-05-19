@@ -6,8 +6,8 @@ nav {
   --_borderRadius:25px;
   --_animationStartsAfter:75dvh;
   --_animationDistance:250px;
-  --_surfaceColorStart:#141d2f;
-  --_surfaceColorEnd:hsl(0 50% 90% / 0.2);
+  --_surfaceColorStart:rgb(20, 29, 47);
+  --_surfaceColorEnd:rgba(20, 29, 47, 0.25);
   --_textColorStart:hsl(0 10% 90%);
   --_textColorEnd:hsl(0 10% 90%);
 
@@ -38,6 +38,11 @@ a {
 
 h1 {
   font-size: clamp(2.4rem, 1.7rem + 3.73vw, 4.5rem);
+
+  animation: logoDisapear linear forwards;
+  animation-timeline: view();
+  animation-range-start: calc(100dvh + var(--_animationStartsAfter));
+  animation-range-end: calc(100dvh + var(--_animationStartsAfter) + var(--_animationDistance));
 }
 
 .center{
@@ -46,46 +51,22 @@ h1 {
   align-items: center;
 }
 
-.nav-mobile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-  width: 100dvw;
-  height: 100dvh;
-  background-color: rgba(65, 72, 86, 0.85); //#414856;
-  z-index: 900;
-  position: fixed;
-  top: 0;
-}
-
 .left {
   padding-left: 37px;
-
-  //animation: logoDisapear linear forwards;
-  //animation-timeline: view();
-  //animation-range-start: calc(100dvh + var(--_animationStartsAfter));
-  //animation-range-end: calc(100dvh + var(--_animationStartsAfter));
-}
-
-.mobile {
-  display: none;
 }
 
 .right {
   padding-right: 37px;
-}
+  display: flex;
+  gap:15px;
 
-.desktop {
   a {
     text-decoration: none;
     font-size: clamp(0.75rem, 0.386rem + 1.82vw, 1.75rem);
-    color: white;
-    margin-right: 29px;
+    color: var(--_textColorStart);
 
     &:hover {
-      color: #1cdae6;
+      color: var(--background-color-hover);
     }
   }
 
@@ -116,10 +97,7 @@ h1 {
 
 @keyframes logoDisapear {
   100%{
-    opacity: 0;
-    visibility: hidden;
-    height: 0;
-    width: 0;
+    font-size: clamp(1.9rem, 1.318rem + 2.91vw, 3.5rem);
   }
 }
 
