@@ -1,22 +1,49 @@
 nav {
+  --_heightStart:109px;
+  --_heightEnd:50px;
+  --_widthStart: 100dvw;
+  --_widthEnd: 350px;
+  --_borderRadius:25px;
+  --_animationStartsAfter:75dvh;
+  --_animationDistance:250px;
+  --_surfaceColorStart:#141d2f;
+  --_surfaceColorEnd:hsl(0 50% 90% / 0.2);
+  --_textColorStart:hsl(0 10% 90%);
+  --_textColorEnd:hsl(0 10% 90%);
+
   z-index: 999;
-  background-color: #141d2f;
-  width: 100dvw;
-  height: 109px;
+  background-color: var(--_surfaceColorStart);
+  color: var(--_textColorStart);
+  width: var(--_widthStart);
+  height: var(--_heightStart);
   position: fixed;
   top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  animation: stickyNav linear forwards;
+  backdrop-filter: blur(0.15rem);
+  animation-timeline: view();
+  animation-range-start: calc(100dvh + var(--_animationStartsAfter));
+  animation-range-end: calc(100dvh + var(--_animationStartsAfter) + var(--_animationDistance));
 }
 
 a {
+  display: inline-block;
+  white-space: nowrap;
   text-decoration: none;
   color: white;
 }
 
 h1 {
   font-size: clamp(2.4rem, 1.7rem + 3.73vw, 4.5rem);
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-mobile {
@@ -35,6 +62,11 @@ h1 {
 
 .left {
   padding-left: 37px;
+
+  animation: logoDisapear linear forwards;
+  animation-timeline: view();
+  animation-range-start: calc(100dvh + var(--_animationStartsAfter));
+  animation-range-end: calc(100dvh + var(--_animationStartsAfter));
 }
 
 .mobile {
@@ -70,6 +102,28 @@ h1 {
   color: #4b47ff;
 }
 
+@keyframes stickyNav {
+  100%{
+    top: 1rem;
+    height:var(--_heightEnd);
+    width:var(--_widthEnd);
+    background-color: var(--_surfaceColorEnd);
+    color: var(--_textColorEnd);
+    box-shadow: 0 0 0.75rem hsl(0 0% 0% / 0.3);
+    border-radius: var(--_borderRadius);
+  }
+}
+
+@keyframes logoDisapear {
+  100%{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+}
+
+/*
 @media (max-width: 700px) {
   .desktop {
     display: none;
@@ -85,3 +139,4 @@ h1 {
     font-size: clamp(2rem, 1.273rem + 3.64vw, 4rem);
   }
 }
+*/
