@@ -6,9 +6,11 @@
   background-image: url("./../../assets/img/shadow_3.png");
   display: flex;
   justify-content: center;
+  align-items: end;
 
   img {
-    width: 60%;
+    max-width: 50dvw;
+    height: auto;
     object-fit: fill;
   }
 }
@@ -43,6 +45,10 @@
   .right {
     order: 1;
     background-image: url("./../../assets/img/shadow_3.png");
+
+    img {
+      max-width: 90dvw;
+    }
   }
 
   .left {
