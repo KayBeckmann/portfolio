@@ -1,7 +1,6 @@
 .card {
-  // width: 440px;
+  min-width: 280px;
   height: 500px;
-  margin: 10px;
   padding: 10px;
   border: 1px solid #00bee8;
   border-radius: 15px;
@@ -91,41 +90,41 @@
   }
 }
 
-@media (max-width: 900px) {
-  .card {
-    &:hover {
-      .content {
-        display: flex;
-      }
-    }
-  }
-}
+// @media (max-width: 900px) {
+//   .card {
+//     &:hover {
+//       .content {
+//         display: flex;
+//       }
+//     }
+//   }
+// }
 
-@media (max-width: 700px) {
-  .card {
-    // &:hover {
-    .content {
-      display: flex;
-      height: 100%;
+// @media (max-width: 700px) {
+//   .card {
+//     // &:hover {
+//     .content {
+//       display: flex;
+//       height: 100%;
 
-      .buttons {
-        margin-top: 300px;
-      }
-    }
-    // }
-  }
-}
+//       .buttons {
+//         margin-top: 300px;
+//       }
+//     }
+//     // }
+//   }
+// }
 
-@media (max-width: 450px) {
-  .card {
-    // &:hover {
-    .content {
-      .buttons {
-        margin-top: 350px;
-        flex-direction: column;
-        gap: 15px;
-      }
-    }
-    // }
-  }
-}
+// @media (max-width: 450px) {
+//   .card {
+//     // &:hover {
+//     .content {
+//       .buttons {
+//         margin-top: 350px;
+//         flex-direction: column;
+//         gap: 15px;
+//       }
+//     }
+//     // }
+//   }
+// }
