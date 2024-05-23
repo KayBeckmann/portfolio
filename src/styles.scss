@@ -79,7 +79,8 @@ h2 {
     minmax(var(--padding-inline, 1fr)) [full-width-end];
 }
 
-.content-grid > * , .full-width > *{
+.content-grid > :not(.breakout, .full-width) , 
+.full-width > :not(.breakout, .full-width){
   grid-column: content;
 }
 
@@ -89,6 +90,10 @@ h2 {
 
 .content-grid > .full-width {
   grid-column: full-width;
+}
+
+.bg{
+  background-color: #1cdae6;
 }
 
 .wrapper {
